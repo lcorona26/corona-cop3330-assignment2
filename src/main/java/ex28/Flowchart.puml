@@ -1,0 +1,8 @@
+@startuml
+(*) --> "Start"
+--> "User inputs 5 numbers"
+--> "5 numbers are then stored in an array "
+--> "5 numbers are then added together "
+--> "Sum is displayed"
+--> "End"
+@enduml
