@@ -23,7 +23,7 @@ public class PasswordStrength {
         }
     }
 
-    private boolean atLeastAlpha(String password) {
+    public boolean atLeastAlpha(String password) {
         int count = 0;
         for(int i = 0; i< password.length(); i++){
             if(Character.isLetter(password.charAt(i)))
@@ -35,7 +35,7 @@ public class PasswordStrength {
         return false;
     }
 
-    private boolean atLeastNum(String password) {
+    public boolean atLeastNum(String password) {
         int count = 0;
         for(int i = 0; i< password.length(); i++){
             if(Character.isDigit(password.charAt(i)))
@@ -47,7 +47,7 @@ public class PasswordStrength {
         return false;
     }
 
-    private boolean hasSpecial(String password) {
+    public boolean hasSpecial(String password) {
         int count = 0;
         for(int i = 0; i< password.length(); i++){
             if(!Character.isLetter(password.charAt(i))
@@ -61,7 +61,7 @@ public class PasswordStrength {
         return false;
     }
 
-    private boolean onlyAlphabets(String password) {
+    public boolean onlyAlphabets(String password) {
         for(int i = 0; i< password.length(); i++){
             if(!Character.isLetter(password.charAt(i)))
                 return false;
@@ -69,7 +69,7 @@ public class PasswordStrength {
         return true;
     }
 
-    private boolean onlyNum(String password) {
+    public boolean onlyNum(String password) {
         for(int i = 0; i< password.length(); i++){
             if(!Character.isDigit(password.charAt(i)))
                 return false;

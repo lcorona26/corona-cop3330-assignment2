@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Assignment 2 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Luis Corona
  */
 
 package ex24;
@@ -14,7 +14,15 @@ public class App {
         String word1 = app.readWord1();
         String word2 = app.readWord2();
         CheckAnagram check = new CheckAnagram();
-        check.isAnagram(word1, word2);
+        boolean anagram = check.isAnagram(word1, word2);
+        app.printOutput(anagram,word1,word2);
+    }
+
+    private void printOutput(boolean anagram,String word1,String word2) {
+        if (anagram)
+            System.out.println("\"" + word1 + "\"" + " and " + "\"" + word2 + "\"" + " are anagrams");
+        else
+            System.out.println("\"" + word1 + "\"" + " and "+ "\"" + word2 + "\"" + " are not anagrams");
     }
 
     private String readWord1() {

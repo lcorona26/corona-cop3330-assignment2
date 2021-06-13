@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Assignment 2 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Luis Corona
  */
 package ex28;
 
@@ -19,11 +19,11 @@ public class App {
         app.printOutput(add);
     }
 
-    private void printOutput(int add) {
+    public void printOutput(int add) {
         System.out.print("The total is " + add + ".");
     }
 
-    private int Addition(int[] input) {
+    public int Addition(int[] input) {
         int sum = 0;
         for(int i = 0; i<5; i++){
             sum += input[i];
@@ -31,7 +31,7 @@ public class App {
         return sum;
     }
 
-    private int[] readInputs() {
+    public int[] readInputs() {
         int[] input = new int[10];
         for(int i = 0; i<5; i++){
             System.out.print("Enter a number: ");

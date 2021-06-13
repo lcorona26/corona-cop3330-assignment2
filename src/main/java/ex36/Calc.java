@@ -1,6 +1,6 @@
 package ex36;
 
-import java.util.ArrayList;
+
 
 public class Calc {
     public float Average(Integer[] num) {

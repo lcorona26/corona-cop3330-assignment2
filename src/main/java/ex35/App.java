@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Assignment 2 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Luis Corona
  */
 
 package ex35;
@@ -23,7 +23,7 @@ public class App {
         System.out.print("The winner is... " +random+ " .");
     }
 
-    private String randomizeWinner(ArrayList<String> array) {
+    public String randomizeWinner(ArrayList<String> array) {
         int rand = 0;
         for(int i =0; i< array.size(); i++){
            rand = (int) (Math.random() * array.size());

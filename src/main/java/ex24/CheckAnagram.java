@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CheckAnagram {
 
-    public void isAnagram(String word1, String word2) {
+    public boolean isAnagram(String word1, String word2) {
         String s1 = word1.replaceAll("\\s", "");
         String s2 = word2.replaceAll("\\s", "");
         boolean anagram = true;
@@ -19,9 +19,6 @@ public class CheckAnagram {
             anagram = Arrays.equals(string1, string2);
         }
 
-        if (anagram)
-            System.out.println("\"" + s1 + "\"" + " and " + "\"" + s2 + "\"" + " are anagrams");
-         else
-            System.out.println("\"" + s1 + "\"" + " and "+ "\"" + s2 + "\"" + " are not anagrams");
+        return anagram;
     }
 }

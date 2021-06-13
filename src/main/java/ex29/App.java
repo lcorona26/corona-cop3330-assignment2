@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Assignment 2 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Luis Corona
  */
 package ex29;
 
@@ -16,17 +16,17 @@ public class App {
         app.printOutput(years);
     }
 
-    private void printOutput(int years) {
+    public void printOutput(int years) {
         System.out.print("It will take " +years+ " years to double your initial investment.");
     }
 
-    private int yearsTillReturn(String r) {
+    public int yearsTillReturn(String r) {
         int rtoInt = Integer.parseInt(r);
         int years = 72/rtoInt;
         return years;
     }
 
-    private String readInput() {
+    public String readInput() {
 
         String input;
         while(true){
